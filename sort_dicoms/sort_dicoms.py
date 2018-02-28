@@ -30,7 +30,7 @@ def sort_dicoms(rootdir):
             dicom_dirs[uid] = os.path.join(rootdir, description_dict[uid])
         
     for i,filename in enumerate(filelist):
-        print('Moving file {} of {}'.format(i, len(filelist)))
+        print('Moving file {} of {}'.format(i+1, len(filelist)))
         uid = uid_dict[filename]
         dirname = dicom_dirs[uid]
 
